@@ -35,6 +35,11 @@ body {
   padding: 25px;
 }
 
+h1 {
+  width: 250px;
+  line-height: 130%;
+}
+
 .main {
   width: 50%;
   background-color: var(--main-bg-color);
