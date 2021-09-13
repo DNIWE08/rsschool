@@ -44,7 +44,6 @@ h1 {
   width: 50%;
   background-color: var(--main-bg-color);
   margin: 20px auto;
-  padding-bottom: 40px;
   display: flex;
 }
 
@@ -95,4 +94,16 @@ h2 {
   width: 150px;
   height: 110px;
   background-size: contain;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo>a>img {
+  width: 150px;
+  height: 100px;
 }
