@@ -25,25 +25,26 @@ body {
 
 .header-image {
   width: 35%;
-  /* background-color: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .header-info {
   width: 65%;
   padding: 25px;
-  /* background-color: #fff; */
 }
 
 .main {
   width: 50%;
   background-color: var(--main-bg-color);
   margin: 20px auto;
+  padding-bottom: 40px;
   display: flex;
 }
 
 .aside {
   width: 35%;
-  /* background-color: #000; */
   padding: 25px;
 }
 
@@ -66,7 +67,6 @@ h2 {
 .main-section {
   width: 65%;
   padding: 25px;
-  /* background-color: #fff; */
 }
 
 .outline {
@@ -76,3 +76,18 @@ h2 {
   background-color: var(--main-text-color);
 }
 
+.project {
+  display: flex;
+}
+
+.project__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.project__item_link img {
+  width: 150px;
+  height: 110px;
+  background-size: contain;
+}
