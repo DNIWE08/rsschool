@@ -5,119 +5,172 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script defer src="./index.js"></script>
   <title>Gleb Zakharevich CV</title>
 </head>
 
 <body>
-  <header class="header">
 
-    <div class="header-image">
-      <img src="./main-photo.png" alt="photo">
-    </div>
+  <div class="wrapper">
 
-    <div class="header-info">
-      <div class="main-info__name">
-        <h1>Gleb Zakharevich</h1>
-        <div class="outline"></div>
-        <p>Front-end developer</p>
+    <div class="menu__wrapper">
+
+      <!-- Display none now -->
+      <div class="menu__burger">
+        <div class="burger"></div>
       </div>
-    </div>
 
-  </header>
-
-  <main class="main">
-
-    <aside class="aside">
-      <div class="contacts">
-        <h2>Contacts</h2>
-        <div class="outline"></div>
-        <div class="contact__item">
-          <p class="contact__item_type">Discord:</p>
-          <p class="contact__item_discription">Gleb#7544</p>
-        </div>
-        <div class="contact__item">
-          <p class="contact__item_type">Gmail:</p>
-          <p class="contact__item_discription">Olimp12345678@gmail.com</p>
-        </div>
-      </div>
-      <div class="skills">
-        <h2>Skills</h2>
-        <div class="outline"></div>
-        <ul class="skills__dicription">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-          <li>JS</li>
-          <li>TS</li>
-          <li>Figma</li>
-          <li>Sketch</li>
-          <li>PS</li>
-          <li>VS Code</li>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#contacts" class="nav__link">Contacts</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#english" class="nav__link">English</a></li>
+          <li><a href="#expirience" class="nav__link">Expirience</a></li>
         </ul>
+      </nav>
+
+    </div>
+
+    <header class="section__wrapper header">
+
+      <div class="block__wrapper header__image">
+        <img src="./assets/main-photo.png" alt="photo">
       </div>
 
-      <div class="english">
-        <h2>English</h2>
-        <div class="outline"></div>
-        <p>A2</p>
-      </div>
-
-    </aside>
-
-    <section class="main-section">
-      <div class="about">
-        <h2>About me</h2>
-        <div class="outline"></div>
-        <p>I want to find myself in Front-end dev. It's fun to learn something new and move on. I studied everything on
-          my own, I want to consolidate my knowledge and learn something new by completing the RSSchool course.</p>
-      </div>
-      <div class="education">
-        <h2>Education</h2>
-        <div class="outline"></div>
-
-          <p class="contact__item_type">2013-2018</p>
-          <p class="contact__item_discription">BSAC (Сommunications specialist)</p> 
-          <p class="contact__item_type">2018-2021</p>
-          <p class="contact__item_discription">Ministry of Emergency Situations</p> 
-
-      </div>
-      <div class="expirience">
-        <h2>Expirience</h2>
-        <div class="outline"></div>
-
-        <div class="project">
-
-          <div class="project__item">
-            <a href="https://dniwe08.github.io/Porfolio_projects/Beatmaker/" target="_blank" class="project__item_link">
-              <img src="./Beatmaker.png" alt="Beatmaker">
-            </a>
-            Beatmaker
+      <div class="block__wrapper header__info">
+        <div class="info-name">
+          <div class="type-writing">
+            <div class="text-writing"></div>
+            <div class="typing"></div>
           </div>
+          <div class="outline"></div>
+          <h1>Front-end developer</h1>
+        </div>
+      </div>
 
-          <div class="project__item">
-            <a href="https://dniwe08.github.io/JStoDoList/" target="_blank" class="project__item_link">
-              <img src="./todolist.png" alt="todolist">
-            </a>
-            To do list
+      <div class="icon__wrapper discord">
+        <a href="https://discord.com/" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a>
+      </div>
+      
+      <div class="icon__wrapper github">
+        <a href="https://github.com/DNIWE08" target="_blank">
+          <i class="fab fa-github-alt"></i>
+        </a>
+      </div>
+
+      <div class="icon__wrapper linked">
+        <a href="https://www.linkedin.com/in/gleb-zaxarevich-155302201/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      
+    </header>
+
+    <main class="section__wrapper main">
+
+      <aside class="section__wrapper aside">
+        <div class="block__wrapper contacts">
+          <h2 id="contacts">Contacts</h2>
+          <div class="outline"></div>
+          <div class="contact__item">
+            <p class="contact__item_type">Discord:</p>
+            <p class="contact__item_discription">Gleb#7544</p>
           </div>
+          <div class="contact__item">
+            <p class="contact__item_type">Gmail:</p>
+            <p class="contact__item_discription">Olimp12345678@gmail.com</p>
+          </div>
+        </div>
+        <div class="block__wrapper skills">
+          <h2 id="skills">Skills</h2>
+          <div class="outline"></div>
+          <ul class="skills__dicription">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SCSS</li>
+            <li>Bootstrap</li>
+            <li>JS</li>
+            <li>TS</li>
+            <li>Figma</li>
+            <li>Sketch</li>
+            <li>PS</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+
+        <div class="block__wrapper english">
+          <h2 id="english">English</h2>
+          <div class="outline"></div>
+          <p>A2</p>
+        </div>
+
+      </aside>
+
+      <section class="section__wrapper main__section">
+        <div class="block__wrapper about">
+          <h2 id="about">About me</h2>
+          <div class="outline"></div>
+          <p>I want to find myself in Front-end dev. It's fun to learn something new and move on. I studied everything on
+            my own, I want to consolidate my knowledge and learn something new by completing the RSSchool course.</p>
+        </div>
+        <div class="block__wrapper education">
+          <h2 id="education">Education</h2>
+          <div class="outline"></div>
+
+            <p class="contact__item_type">2013-2018</p>
+            <p class="contact__item_discription">BSAC (Сommunications specialist)</p> 
+            <p class="contact__item_type">2018-2021</p>
+            <p class="contact__item_discription">Ministry of Emergency Situations</p> 
 
         </div>
 
-      </div>
-    </section>
-  </main>
+        <div class="block__wrapper expirience">
+          <h2 id="expirience">Expirience</h2>
+          <div class="outline"></div>
 
-  <footer class="footer">
-    <div class="logo">
-      <a href="https://rs.school/js/" target="_blank">
-          <img src="https://rs.school/images/rs_school_js.svg" alt="course-logo">
-      </a>
+          <div class="project">
+
+            <div class="project__item">
+              <a href="https://dniwe08.github.io/Porfolio_projects/Beatmaker/" target="_blank" class="project__item_link">
+                <img src="./assets/Beatmaker.png" alt="Beatmaker">
+              </a>
+              Beatmaker
+            </div>
+
+            <div class="project__item">
+              <a href="https://dniwe08.github.io/JStoDoList/" target="_blank" class="project__item_link">
+                <img src="./assets/todolist.png" alt="todolist">
+              </a>
+              To do list
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="logo">
+        <a href="https://rs.school/js/" target="_blank">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="course-logo">
+        </a>
+    </div>
+    <div class="info">
+        Created in 2021
+    </div>
+    </footer>
+  
   </div>
-  <div class="info">
-      Created in 2021
-  </div>
-  </footer>
 
 </body>
 
