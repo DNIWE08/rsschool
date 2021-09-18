@@ -426,6 +426,7 @@ li a:hover {
 
   .wrapper{
     width: 70%;
+    margin: 0 auto;
   }
 
   .header-info {
@@ -442,6 +443,10 @@ li a:hover {
 
   .linked {
     right: 150px;
+  }
+  
+  .github {
+    right: 190px;
   }
 
 }
